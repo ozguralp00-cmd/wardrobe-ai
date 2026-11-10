@@ -1,0 +1,6 @@
+{
+  "name": "Atelier — Digital Wardrobe & Smart Fashion Assistant",
+  "description": "An interactive, hyper-realistic virtual walk-in closet with multi-object visual segmentation, virtual try-on fitting room, AI outfit stylist, and smart price tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

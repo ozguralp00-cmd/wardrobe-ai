@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #F8F7F4;
+    color: #1A1A1A;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom rail sway animations for physical realism */
+@keyframes hangerSway {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(2.8deg); }
+  50% { transform: rotate(-2.2deg); }
+  75% { transform: rotate(1deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.animate-sway {
+  transform-origin: top center;
+  animation: hangerSway 3.6s ease-in-out infinite;
+}
+
+.animate-sway-delayed {
+  transform-origin: top center;
+  animation: hangerSway 4.2s ease-in-out infinite;
+  animation-delay: -1.8s;
+}
+
+/* Custom scrollbars for boutique feel */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(26, 26, 26, 0.15);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(26, 26, 26, 0.3);
+}
